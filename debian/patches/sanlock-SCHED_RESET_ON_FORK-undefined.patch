@@ -1,0 +1,33 @@
+Is needed to compile for some people
+
+Index: src/main.c
+===================================================================
+--- a/src/main.c.orig
++++ b/src/main.c
+@@ -52,6 +52,10 @@
+ 
+ #define RELEASE_VERSION "2.1"
+ 
++#ifndef SCHED_RESET_ON_FORK
++#define SCHED_RESET_ON_FORK 0
++#endif
++
+ struct thread_pool {
+ 	int num_workers;
+ 	int max_workers;
+Index: wdmd/main.c
+===================================================================
+--- a/wdmd/main.c.orig
++++ b/wdmd/main.c
+@@ -43,6 +43,10 @@
+ 
+ #define RELEASE_VERSION "2.1"
+ 
++#ifndef SCHED_RESET_ON_FORK
++#define SCHED_RESET_ON_FORK 0
++#endif
++
+ #define DEFAULT_TEST_INTERVAL 10
+ #define DEFAULT_FIRE_TIMEOUT 60
+ #define DEFAULT_HIGH_PRIORITY 1
+

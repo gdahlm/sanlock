@@ -1,0 +1,11 @@
+Description=Watchdog Multiplexing Daemon
+After=syslog.target
+
+[Service]
+Type=forking
+ExecStart=/lib/systemd/systemd-wdmd start
+ExecStop=/lib/systemd/systemd-wdmd stop
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,35 @@
+Source: sanlock
+Section: libs
+Standards-Version: 3.9.3
+Priority: optional
+Homepage: https://fedorahosted.org/sanlock/
+Maintainer: David Weber <wb@munzinger.de>
+Build-Depends: libaio-dev,
+		libblkid1,
+		libblkid-dev,
+		debhelper (>= 8),
+
+Package: sanlock
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
+Architecture: any
+Description: shared storage lock manager
+	Sanlock ensures that single disk cannot be used by more than 
+	one running VM at a time, across any host in a network.
+	This package contains the binaries and private shared libraries
+
+Package: libsanlock-client1
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: any
+Description: client library for sanlock
+	Sanlock ensures that single disk cannot be used by more than 
+	one running VM at a time, across any host in a network.
+	This package contains the pulbic shared library for libvirt
+
+
+Package: sanlock-dev
+Depends: ${misc:Depends}, libsanlock-client1 (= ${binary:Version}), sanlock (= ${binary:Version})
+Architecture: any
+Description: development files for sanlock
+	Sanlock ensures that single disk cannot be used by more than 
+	one running VM at a time, across any host in a network.
+	This package contains the header files and static libraries.

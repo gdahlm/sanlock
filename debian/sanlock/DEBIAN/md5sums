@@ -1,0 +1,8 @@
+ca94aa1b756aa6985d091b5342092015  usr/lib/sanlock/libsanlock.so.1.0
+de65dc72ab559c8c9aae842e49570a5a  usr/lib/sanlock/libwdmd.so.1.0
+d05f5e39e722176e01c52e5097ed3473  usr/sbin/sanlock
+73968740ae5e4809445607b3c75f6d2e  usr/sbin/wdmd
+1a85bb45c9e68228b3259cd6be50f518  usr/share/doc/sanlock/changelog.Debian.gz
+615d5b66b51463b3f102becc2be06bc0  usr/share/doc/sanlock/copyright
+41ed018f93a2b970e037885d7495f87b  usr/share/man/man8/sanlock.8.gz
+ac5dcb0aacaed5f841186269bb1210ec  usr/share/man/man8/wdmd.8.gz

@@ -1,0 +1,14 @@
+Package: libsanlock-client1
+Source: sanlock
+Version: 2.1-4.1
+Architecture: amd64
+Maintainer: David Weber <wb@munzinger.de>
+Installed-Size: 23
+Depends: libc6 (>= 2.2.5)
+Section: libs
+Priority: optional
+Homepage: https://fedorahosted.org/sanlock/
+Description: client library for sanlock
+ Sanlock ensures that single disk cannot be used by more than
+ one running VM at a time, across any host in a network.
+ This package contains the pulbic shared library for libvirt

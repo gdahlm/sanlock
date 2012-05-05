@@ -1,0 +1,5 @@
+sanlock-SCHED_RESET_ON_FORK-undefined.patch
+libdir.patch
+put_libs_into_dir.patch
+
+fix_var_run_path

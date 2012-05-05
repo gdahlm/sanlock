@@ -1,0 +1,11 @@
+Description=Shared Storage Lease Manager
+After=syslog.target wdmd.service
+
+[Service]
+Type=forking
+ExecStart=/lib/systemd/systemd-sanlock start
+ExecStop=/lib/systemd/systemd-sanlock stop
+
+[Install]
+WantedBy=multi-user.target
+

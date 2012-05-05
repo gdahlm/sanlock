@@ -1,0 +1,8 @@
+46860857668319eabb7b312cd4beb05b  usr/include/sanlock.h
+09d438ce1c77702823476383390b3279  usr/include/sanlock_admin.h
+cf8c951ce5d2167391821cc63e552d73  usr/include/sanlock_direct.h
+8727720ea14e835c1d0ea8b331a32f3b  usr/include/sanlock_resource.h
+1276a764dfa85c4719fc88ee174bb39f  usr/include/sanlock_rv.h
+1db1ca1805b3ca1c63981bca4d19fe77  usr/include/wdmd.h
+1a85bb45c9e68228b3259cd6be50f518  usr/share/doc/sanlock-dev/changelog.Debian.gz
+615d5b66b51463b3f102becc2be06bc0  usr/share/doc/sanlock-dev/copyright

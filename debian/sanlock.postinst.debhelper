@@ -1,0 +1,12 @@
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/wdmd" ]; then
+	update-rc.d wdmd defaults >/dev/null
+	invoke-rc.d wdmd start || exit $?
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/sanlock" ]; then
+	update-rc.d sanlock defaults >/dev/null
+	invoke-rc.d sanlock start || exit $?
+fi
+# End automatically added section
