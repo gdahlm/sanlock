@@ -18,7 +18,7 @@ DESC="sanlock lock-manager"  # Introduce a short description here
 NAME=sanlock               # Introduce the short server's name here
 DAEMON=/usr/sbin/sanlock   # Introduce the server's location here
 DAEMON_ARGS="daemon"       # Arguments to run the daemon with
-PIDFILE=/var/run/$NAME.pid
+PIDFILE=/var/run/${NAME}/${NAME}.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
 # Exit if the package is not installed
@@ -99,7 +99,8 @@ case "$1" in
 	esac
 	;;
   status)
-       status_of_proc "$DAEMON" "$NAME" && exit 0 || exit $?
+       #status_of_proc "$DAEMON" "$NAME" && exit 0 || exit $?
+       status_of_proc -p${PIDFILE} ${DAEMON} ${NAME} && exit 0 || exit $?
        ;;
   restart|force-reload)
 	#
