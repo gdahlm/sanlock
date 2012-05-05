@@ -1,2 +1,0 @@
-shlibs:Depends=libaio1 (>= 0.3.93), libblkid1 (>= 2.17.2), libc6 (>= 2.7), libuuid1 (>= 2.16), sanlock (>= 2.1)
-misc:Depends=
